@@ -4,8 +4,7 @@ Este é um projeto para consumir uma api de notícias (News API: https://newsapi
 
 ## Deploy
 
-[https://challenge-news-tech-probem-55mgph3qm-nadiellymedeiros.vercel.app]
-(https://challenge-news-tech-probem-55mgph3qm-nadiellymedeiros.vercel.app)
+[https://challenge-news-tech-probem-55mgph3qm-nadiellymedeiros.vercel.app](https://challenge-news-tech-probem-55mgph3qm-nadiellymedeiros.vercel.app)
 
 ## Para iniciar o projeto
 
