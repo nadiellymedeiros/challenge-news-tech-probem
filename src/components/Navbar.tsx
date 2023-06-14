@@ -1,6 +1,9 @@
 "use client";
 
 import * as React from "react";
+
+import Category from "./Category";
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -14,9 +17,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Article from "@mui/icons-material/Article";
-import Link from "next/link";
 
 interface Props {
   window?: () => Window;
@@ -48,6 +49,8 @@ export default function DrawerAppBar(props: Props) {
             </ListItemButton>
           </ListItem>
         ))}
+
+        <Category />
       </List>
     </Box>
   );
@@ -94,13 +97,20 @@ export default function DrawerAppBar(props: Props) {
             News Tech Pro bem
           </Typography>
 
-          {/* <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
-          </Box> */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".1rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            <Category />
+          </Box>
 
           <Box
             sx={{
@@ -128,7 +138,7 @@ export default function DrawerAppBar(props: Props) {
               variant="h5"
               noWrap
               component="a"
-              href="/about"
+              href="/About"
               sx={{
                 textDecoration: "none",
                 mr: 2,
@@ -142,7 +152,7 @@ export default function DrawerAppBar(props: Props) {
               variant="h5"
               noWrap
               component="a"
-              href="/contact"
+              href="/Contact"
               sx={{
                 textDecoration: "none",
                 mr: 2,

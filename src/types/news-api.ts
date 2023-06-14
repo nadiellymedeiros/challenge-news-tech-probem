@@ -1,9 +1,3 @@
-export interface NewsListAPI {
-  status: string;
-  totalResults: number;
-  articles: NewsListResultAPI[];
-}
-
 export interface NewsListResultAPI {
   author: string;
   title: string;
@@ -12,4 +6,10 @@ export interface NewsListResultAPI {
   urlToImage?: string;
   publishedAt: string;
   content: string;
+}
+
+export interface NewsListAPI {
+  status: string;
+  totalResults: number;
+  articles: NewsListResultAPI[];
 }
