@@ -11,12 +11,6 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 
-// interface News {
-//   id: number;
-//   name: string;
-//   imageUrl: string;
-// }
-
 export default function NewsCard(props: any) {
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -48,7 +42,7 @@ export default function NewsCard(props: any) {
                   <Typography variant="body2" color="text.secondary">
                     {props.description}
                   </Typography>
-                  <Typography gutterBottom variant="h9" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     Author: {props.author}
                   </Typography>
                 </CardContent>
