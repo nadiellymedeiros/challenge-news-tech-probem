@@ -15,7 +15,7 @@ export default function about() {
           fontWeight: 500,
         }}
       >
-        Contact
+        <h1> Contact</h1>
       </Box>
     </>
   );

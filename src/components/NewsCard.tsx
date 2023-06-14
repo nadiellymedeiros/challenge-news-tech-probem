@@ -11,15 +11,14 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 
-interface News {
-  id: number;
-  name: string;
-  imageUrl: string;
-}
+// interface News {
+//   id: number;
+//   name: string;
+//   imageUrl: string;
+// }
 
 export default function NewsCard(props: any) {
   const [loading, setLoading] = useState<boolean>(false);
-  const [news, setNews] = useState<News>();
 
   return (
     <Link href={props.url} target="_blank">
